@@ -1,1 +1,10 @@
-In this research, HuggingFace BERT, one of the initial multilingual models for sentiment analysis developed by NLP Town within the HuggingFace ecosystem, is utilized. The base model, BERT, was originally created by Google, with further details available in their paper \cite{BERT}. HuggingFace BERT provides sentiment probabilities across five classes, making it a viable option for replacing traditional ratings. Additionally, this model has been fine-tuned specifically for sentiment analysis on product reviews, enhancing its ability to deliver reliable sentiment scores for our review analysis task.
+In this research, HuggingFace BERT, one of the initial
+multilingual models for sentiment analysis developed by NLP
+Town within the HuggingFace ecosystem, is utilized. The
+base model, BERT, was originally created by Google, with
+further details available in their paper [10]. HuggingFace
+BERT provides sentiment probabilities across five classes,
+making it a viable option for replacing traditional ratings.
+Additionally, this model has been fine-tuned specifically for
+sentiment analysis on product reviews, enhancing its ability to
+deliver reliable sentiment scores for our review analysis task.
