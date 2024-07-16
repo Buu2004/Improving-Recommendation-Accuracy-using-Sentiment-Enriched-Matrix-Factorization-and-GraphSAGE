@@ -1,1 +1,19 @@
+This study introduces a straightforward neural network architecture that utilizes heterogeneous GraphSAGE to predict connections between users and items.
+
+GraphSAGE is a powerful deep learning framework designed for inductive representation learning on large graphs. Unlike traditional graph 
+learning methods that rely on full graph structure, GraphSAGE generates embeddings by sampling and aggregating features from a node's local neighborhood. 
+This makes it highly scalable and capable of handling dynamic, evolving graphs, as it does not require re-training when new nodes or edges are added. 
+In recommendation systems, GraphSAGE offers significant advantages by efficiently capturing complex relationships and patterns within user-item interactions. 
+Its inductive nature ensures adaptability to new data, maintaining performance even as the user base and item catalog expand.
+
+Heterogeneous GraphSAGE extends the approach to heterogeneous graphs, which consist of multiple types of nodes. This extension is particularly advantageous
+for building recommendation systems with two node types: users and items. By incorporating user and item nodes, heterogeneous GraphSAGE captures the complex
+interactions between users and items more effectively than homogeneous models. This leads to richer and more meaningful representations. In addition, 
+aggregating features from different types of nodes allows the model to learn from the diverse characteristics and behaviors associated with each type.
+
+The proposed network comprises two SAGE convolutional layers for embedding generation from initial node features. 
+Each convolutional layer uses the mean aggregator, as described in Eq.(2) of the original paper.
+
+For link prediction, the method calculates the cosine similarity between user and item embeddings, applying a sigmoid activation to predict the likelihood 
+of a link. Binary cross-entropy loss between predicted and actual edge labels is used to optimize the model parameters.
 
